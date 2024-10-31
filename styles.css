@@ -26,6 +26,59 @@ body {
     color: var(--text-color);
 }
 
+/* ---------- Hero Section Styles ---------- */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 150px auto;
+    width: 70%;
+    font-size: 30px;
+    padding: 100px 0 0 0;
+}
+
+.hero img {
+    float: left;
+    margin-right: 50px;
+    width: 40vw;
+}
+
+.hero .text {
+    font-family: "Montserrat", serif;
+    font-size: 25px;
+}
+
+.hero .text h1 {
+    color: #1B3A4B;
+}
+
+.hero .text span {
+    color: #1B3A4B; 
+    font-size: 50px;
+}
+
+.hero .text button {
+    font-family: "Montserrat", serif;
+    background: none;
+    width: 150px;
+    height: 8vh;
+    margin-top: 20px;
+    transition: all 0.5s ease;
+    border-radius: 20px;
+    font-size: 18px;
+    border: 2px solid #F26A1B;
+}
+
+.hero .text button:hover {
+    background: #1B3A4B;
+    color: #fff;
+    box-shadow: 0px 0px 20px #F26A1B, 0px 0px 40px #F26A1B;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    scale: 110%;
+    border: none;
+}
+
 /* ---------- About Us Section Styles ---------- */
 .about-us {
     font-family: "Montserrat";
