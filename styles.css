@@ -275,7 +275,152 @@ body {
     background-color: #E85D0D;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
+/* ---------- Contact Us Section Styles ---------- */
+.contact-us {
+    font-family: "Montserrat", sans-serif;
+    background-color: #F5F5F5; 
+    padding: 70px 0;
+    text-align: center;
+    color: #1B3A4B;
+}
 
+.contact-us .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contact-us .main-title h2 {
+    font-size: 2.7em;
+    color: #1B3A4B; 
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+
+.contact-us .main-title h2:hover {
+    color: #F26A1B; 
+}
+
+.contact-us .main-title h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #F26A1B; 
+    margin: 10px auto 0;
+    transition: width 0.3s ease;
+}
+
+.contact-us .main-title h2:hover::after {
+    width: 90px;
+}
+
+.contact-us .main-title p {
+    font-size: 1.2em;
+    color: #6A7985;
+    margin-bottom: 40px;
+}
+
+.contact-widget-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.contact-widget-block {
+    background-color: #fff; 
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    flex: 1 1 calc(33.333% - 40px);
+    max-width: calc(33.333% - 40px);
+    box-sizing: border-box;
+    margin: 20px 0;
+    transition: all 0.3s ease;
+}
+
+.contact-widget-block:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contact-widget-block h3.title {
+    font-size: 1.6em;
+    color: #1B3A4B; 
+    margin-bottom: 15px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.contact-widget-block h3.title::after {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 3px;
+    background-color: #F26A1B; 
+    margin: 8px 0 0;
+}
+
+.contact-widget-block p {
+    font-size: 1.1em;
+    color: #6A7985;
+    margin: 8px 0;
+}
+
+/* ---------- Form and Button Styles ---------- */
+.contact-form .btn {
+    font-family: "Montserrat", sans-serif;
+    background: #f3813f; 
+    color: #fff;
+    width: 150px;
+    height: 8vh;
+    margin-top: 20px;
+    transition: all 0.5s ease;
+    border-radius: 20px;
+    font-size: 18px;
+    border: none;
+}
+
+.contact-form .btn:hover {
+    background: #E85D0D; 
+    color: #fff;
+    box-shadow: 0px 0px 20px #F26A1B, 0px 0px 30px #F26A1B; 
+    cursor: pointer;
+    transition: all 0.5s ease;
+    scale: 110%;
+    border: none;
+}
+
+.contact-form input,
+.contact-form textarea {
+    font-family: "Montserrat";
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
+    font-size: 1em;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #F26A1B; 
+    outline: none;
+}
+/*------------- section google maps -----------------*/
+
+#gmap_canvas {
+    display: relative;
+    width: 100%;
+    height: 500px;
+    border: 1px solid #000;
+}
 /* ---------- Footer Styles ---------- */
 .footer {
     background-color: #1E445A; 
