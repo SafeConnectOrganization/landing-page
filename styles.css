@@ -25,3 +25,145 @@ body {
     padding: 0;
     color: var(--text-color);
 }
+
+/* ---------- Testimonials Section Styles ---------- */
+.testimonials {
+    font-family: "Montserrat", sans-serif;
+    background-color: #F9FAFB;
+    padding: 50px 20px;
+    text-align: center;
+    color: #1B3A4B;
+}
+
+.testimonials .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonials .section-title h1 {
+    font-size: 2.7em;
+    color: #1B3A4B;
+    margin-bottom: 20px;
+}
+
+.testimonials .section-title h2 {
+    font-size: 36px;
+    color: #6A7985;
+    margin-bottom: 20px;
+}
+
+.testimonials .section-title p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #6A7985;
+}
+
+/* Testimonial Carousel */
+.testimonial-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.testimonial-wrapper {
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.testimonial-slider {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 20px;
+}
+
+.single-testimonial {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(50% - 10px);
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+.single-testimonial:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.inner-content {
+    position: relative;
+    padding: 20px;
+}
+
+.quote-icon {
+    font-size: 3em;
+    color: #F26A1B;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.text p {
+    font-size: 1em;
+    color: #555;
+    margin-top: 40px;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.author img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    border: 2px solid #1B3A4B;
+}
+
+.name {
+    font-size: 1.2em;
+    color: #1B3A4B;
+}
+
+.deg {
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* Arrows */
+.arrow {
+    background-color: #F26A1B;
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#arrow-prev {
+    left: 20px;
+    z-index: 5;
+}
+
+#arrow-next {
+    right: 20px;
+    z-index: 5;
+}
+
+.arrow:hover {
+    background-color: #E85D0D;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
