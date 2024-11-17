@@ -13,12 +13,6 @@ html {
     scroll-behavior: smooth;
 }
 
-:root {
-    --bg-color: rgb(201, 196, 196);
-    --bg-color2: #e2c872;
-    --text-color: #666866;
-}
-
 /* Estilos generales */
 body {
     margin: 0;
@@ -162,27 +156,44 @@ header .navbar ul li a:hover::before {
     padding: 100px 0;
 }
 
-.inner-section {
-    width: 55%;
-    background-color: #ddf7ff;
-    padding: 140px;
-    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
-    border-radius: 15px;
+.container-about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.about-us-card {
+    background-color: #e8faff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 45%;
+    max-width: 500px;
+}
+
+.inner-section, .logo-about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
 }
 
 .inner-section h1 {
-    margin-bottom: 30px;
     font-size: 2.7em;
     color: #1B3A4B;
+    margin-bottom: 20px;
 }
 
-.inner-section .text {
-    font-size: 20px;
-    color: #333; 
-    line-height: 30px;
-    text-align: justify;
-    margin-bottom: 40px;
+.logo-about-us img {
+    max-width: 90%;
+    height: 90%;
+    border-radius: 10px;
 }
+
 
 .contact-us-abt button {
     font-family: "Montserrat", serif;
@@ -781,4 +792,213 @@ header .navbar ul li a:hover::before {
 
 .footer .copyright a:hover {
     color: #fff; 
+}
+
+/* -------------- Queries ----------------- */
+@media (max-width: 1024px) {
+    .contact-widget-block {
+        flex: 1 1 48%;
+        max-width: 48%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .single-table {
+        width: 100%;
+    }
+
+    .pricing-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .arrow {
+        padding: 10px 15px;
+        font-size: 1.2rem;
+    }
+
+    #arrow-prev {
+        left: 10px;
+    }
+
+    #arrow-next {
+        right: 10px;
+    }
+
+    .single-testimonial {
+        width: calc(100% - 20px);
+    }
+
+    .contact-widget-block {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .contact-us .main-title h2 {
+        font-size: 2.2em;
+    }
+
+    .contact-widget-block {
+        margin: 15px 0;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 10px;
+    }
+
+    .contact-us .main-title h2 {
+        font-size: 1.8em;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .inner-section {
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container-about-us {
+        flex-direction: column;
+    }
+
+    .about-us-card {
+        flex: 1 1 100%;
+        max-height: 90%;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    header {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    header .hamburger {
+        display: block;
+    }
+
+    header nav {
+        position: absolute;
+        left: -280px;
+        top: 0;
+        z-index: 5;
+        width: 280px;
+        height: 100vh;
+        background-color: #fefefe;
+        transition: 0.2s;
+        box-shadow: 2px 0 20px 0 rgba(0, 0, 0, 0.05);
+    }
+
+    header nav .logo {
+        display: block;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+    }
+
+    header nav ul {
+        display: block;
+        padding: 0 20px;
+        margin-top: 50px;
+        flex-direction: column;
+    }
+
+    header #nav_check:checked~nav {
+        left: 0;
+    }
+
+    .about-us {
+
+        background: none;
+        padding: 100px 40px;
+    }
+
+    .inner-section {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .about-us {
+        padding: 0;
+    }
+
+    .inner-section {
+        padding: 60px;
+    }
+
+    .contact-us-abt button {
+        font-size: 19px;
+        padding: 5px;
+        width: 150px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-col {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .footer .social-links {
+        justify-content: center;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .navbar ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .navbar ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar ul li a {
+        padding: 10px;
+        margin: 5px 0;
+    }
+
+    .hero {
+        flex-direction: column;
+        margin: 150px auto;
+        width: 90%;
+    }
+
+    .hero img {
+        width: 80vw;
+        margin: 0 0 20px 0;
+    }
+
+    .hero .text {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .hero .text button {
+        font-size: 15px;
+        width: 180px;
+        height: 80px;
+    }
 }
