@@ -269,6 +269,147 @@ header .navbar ul li a:hover::before {
     color: #cea66f;
 }
 
+/* ---------- Pricing Section Styles ---------- */
+#pricing {
+    font-family: "Montserrat";
+    padding: 60px 0;
+    background-color: #F9FAFB;
+}
+
+#pricing .section-title h1 {
+    font-size: 2.7em;
+    color: #1B3A4B;
+}
+
+#pricing .section-title h3 {
+    font-size: 24px;
+    color: #6A7985;
+    margin-bottom: 10px;
+}
+
+#pricing .section-title h2 {
+    font-size: 36px;
+    color: #1B3A4B;
+    margin-bottom: 20px;
+}
+
+#pricing .section-title p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 40px;
+}
+
+#pricing .container {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.single-table {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    margin: 15px 0;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.single-table.middle {
+    border: 2px solid #1E445A;
+}
+
+.popular {
+    background-color: #226f99;
+    color: #fff;
+    padding: 5px 10px;
+    position: absolute;
+    top: -15px;
+    left: 15px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.table-head .title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #1B3A4B;
+}
+
+.table-head .sub-title {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #6A7985;
+}
+
+.price {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #1E445A;
+}
+
+.currency {
+    font-size: 18px;
+    vertical-align: top;
+}
+
+.duration {
+    font-size: 16px;
+    color: #777;
+}
+
+.table-content ul {
+    list-style: none;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+.table-list li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #555;
+    position: relative;
+    padding-left: 25px;
+    text-align: left;
+}
+
+.table-list li::before {
+    content: '\2713';
+    color: #2d9bcb;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #2d9bcb;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #144459;
+}
+
+.no-card {
+    font-size: 14px;
+    color: #777;
+    margin-top: 20px;
+}
+
+
 /* ---------- Testimonials Section Styles ---------- */
 .testimonials {
     font-family: "Montserrat", sans-serif;
