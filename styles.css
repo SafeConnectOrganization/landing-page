@@ -794,13 +794,13 @@ header .navbar ul li a:hover::before {
     color: #fff; 
 }
 
-.video-about-team {
+.video-about-team, .video-about-prototype {
     padding: 50px 0;
     text-align: center;
     background-color: #f9f9f9;
 }
 
-.video-about-team h2 {
+.video-about-team h2, .video-about-prototype h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
     color: #1B3A4B;
@@ -810,6 +810,11 @@ header .navbar ul li a:hover::before {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.spacer {
+    height: 50px;
+    background-color: #f9f9f9; 
 }
 
 /* -------------- Queries ----------------- */
